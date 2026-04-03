@@ -71,3 +71,40 @@
     });
   });
 })();
+/* ===================== MODAL (works.html) ===================== */
+(function () {
+  const openBtns = document.querySelectorAll('.open-modal');
+  const overlays  = document.querySelectorAll('.modal-overlay');
+  if (!openBtns.length) return;
+
+  function openModal(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeAll() {
+    overlays.forEach(o => o.classList.remove('active'));
+    document.body.style.overflow = '';
+  }
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openModal(btn.dataset.modal);
+    });
+  });
+
+  overlays.forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeAll();
+    });
+    const closeBtn = overlay.querySelector('.modal-close');
+    if (closeBtn) closeBtn.addEventListener('click', closeAll);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAll();
+  });
+})();

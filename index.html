@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -21,10 +21,12 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#tools">Tools</a></li>
         <li><a href="works.html">Works</a></li>
+        <li><a href="#workshops">Workshops</a></li>
+        <li><a href="info.html">Info</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-right">
-        <a class="btn-cv" href="Sarmiento_Ian_Carl_-_CV.pdf" target="_blank" rel="noopener">
+        <a class="btn-cv" href="assets/Sarmiento_Ian_Carl_-_CV.pdf" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="12" x2="12" y2="18"/><polyline points="9 15 12 18 15 15"/></svg>
           View CV
         </a>
@@ -57,7 +59,6 @@
           </a>
         </div>
         <div class="hero-photo-wrap fade-up" style="transition-delay:0.2s">
-          <!-- Replace src with your actual photo path when ready -->
           <img src="assets/ian_sarmiento.jpg" alt="Ian Carl Sarmiento" />
         </div>
       </div>
@@ -138,6 +139,14 @@
 
         <div class="skill-card fade-up" style="transition-delay:0.20s">
           <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></svg>
+          </div>
+          <div class="skill-title">Funnel Creation & Automation</div>
+          <div class="skill-desc">Building and managing marketing funnels using GoHighLevel and ClickFunnels — from landing pages to automated follow-up sequences.</div>
+        </div>
+
+        <div class="skill-card fade-up" style="transition-delay:0.25s">
+          <div class="skill-icon">
             <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
           <div class="skill-title">Web Development</div>
@@ -161,7 +170,7 @@
           <p class="section-label">Tech stack</p>
           <h2 class="serif">Technical Skills</h2>
         </div>
-        <a class="skills-more" href="Sarmiento_Ian_Carl_-_CV.pdf" target="_blank">See full list in CV →</a>
+        <a class="skills-more" href="assets/Sarmiento_Ian_Carl_-_CV.pdf" target="_blank">See full list in CV →</a>
       </div>
       <div class="tools-grid fade-up" style="transition-delay:0.1s">
         <span class="tool-pill"><span class="tool-dot"></span>Canva</span>
@@ -195,14 +204,11 @@
         </div>
         <a href="works.html">See all works →</a>
       </div>
-
       <div class="carousel-wrap">
         <div class="carousel" id="carousel">
 
           <div class="work-card">
-            <div class="work-thumb">
-              <span class="work-thumb-label">Campaign thumbnail</span>
-            </div>
+            <div class="work-thumb"><span class="work-thumb-label">Campaign thumbnail</span></div>
             <div class="work-body">
               <div class="work-type">Social Media Campaign</div>
               <div class="work-title">Brand Awareness Campaign</div>
@@ -212,9 +218,7 @@
           </div>
 
           <div class="work-card">
-            <div class="work-thumb">
-              <span class="work-thumb-label">Campaign thumbnail</span>
-            </div>
+            <div class="work-thumb"><span class="work-thumb-label">Design thumbnail</span></div>
             <div class="work-body">
               <div class="work-type">Content Design</div>
               <div class="work-title">Social Media Graphics Series</div>
@@ -224,21 +228,17 @@
           </div>
 
           <div class="work-card">
-            <div class="work-thumb">
-              <span class="work-thumb-label">Campaign thumbnail</span>
-            </div>
+            <div class="work-thumb"><span class="work-thumb-label">Community thumbnail</span></div>
             <div class="work-body">
               <div class="work-type">Community Management</div>
               <div class="work-title">Engagement Growth Strategy</div>
-              <div class="work-desc">Structured comment and message management approach that strengthened brand presence and improved audience response rates.</div>
+              <div class="work-desc">Structured comment and message management that strengthened brand presence and improved audience response rates.</div>
               <a class="work-link" href="works.html">View details →</a>
             </div>
           </div>
 
           <div class="work-card">
-            <div class="work-thumb">
-              <span class="work-thumb-label">Campaign thumbnail</span>
-            </div>
+            <div class="work-thumb"><span class="work-thumb-label">Email thumbnail</span></div>
             <div class="work-body">
               <div class="work-type">Email Marketing</div>
               <div class="work-title">Email Campaign Execution</div>
@@ -248,7 +248,6 @@
           </div>
 
         </div>
-
         <div class="carousel-nav fade-up">
           <button class="carousel-btn" id="prevBtn" aria-label="Previous">
             <svg viewBox="0 0 24 24" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
@@ -257,6 +256,83 @@
             <svg viewBox="0 0 24 24" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ========== WORKSHOPS ========== -->
+  <section id="workshops">
+    <div class="container">
+      <div class="workshops-header fade-up">
+        <div>
+          <p class="section-label">Learning & Development</p>
+          <h2 class="serif">Workshops <em>Completed</em></h2>
+        </div>
+      </div>
+      <div class="workshops-grid fade-up" style="transition-delay:0.05s">
+
+        <div class="workshop-card">
+          <div class="workshop-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="workshop-body">
+            <div class="workshop-org">Outsourced Doers</div>
+            <div class="workshop-title">Virtual Assistant Foundations</div>
+            <div class="workshop-desc">Core training covering social media management, client communication, calendar management, and productivity workflows for virtual assistants.</div>
+            <div class="workshop-meta">
+              <span class="workshop-badge">Completed</span>
+              <span class="workshop-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="workshop-card">
+          <div class="workshop-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></svg>
+          </div>
+          <div class="workshop-body">
+            <div class="workshop-org">GoHighLevel / ClickFunnels</div>
+            <div class="workshop-title">Funnel Building & Automation</div>
+            <div class="workshop-desc">Hands-on training in building marketing funnels, automating follow-up sequences, and setting up CRM pipelines for lead generation.</div>
+            <div class="workshop-meta">
+              <span class="workshop-badge">Completed</span>
+              <span class="workshop-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="workshop-card">
+          <div class="workshop-icon">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </div>
+          <div class="workshop-body">
+            <div class="workshop-org">Meta Blueprint</div>
+            <div class="workshop-title">Social Media Marketing Essentials</div>
+            <div class="workshop-desc">Platform-specific training on Facebook and Instagram content strategy, ad basics, and audience engagement best practices.</div>
+            <div class="workshop-meta">
+              <span class="workshop-badge">Completed</span>
+              <span class="workshop-year">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="workshop-card">
+          <div class="workshop-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="workshop-body">
+            <div class="workshop-org">Zoho</div>
+            <div class="workshop-title">Email Marketing with Zoho Campaigns</div>
+            <div class="workshop-desc">Training on campaign creation, subscriber management, email templates, A/B testing, and performance reporting using Zoho Campaigns.</div>
+            <div class="workshop-meta">
+              <span class="workshop-badge">Completed</span>
+              <span class="workshop-year">2025</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -284,37 +360,24 @@
     <div class="footer-inner">
       <span class="footer-copy">© 2026 Ian Carl Sarmiento. All rights reserved.</span>
       <div class="footer-socials">
-
-        <!-- Facebook -->
         <a class="social-link" href="https://www.facebook.com/icsrmnt" target="_blank" rel="noopener" aria-label="Facebook">
           <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
-
-        <!-- Instagram -->
         <a class="social-link" href="https://www.instagram.com/srmiento_/" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-
-        <!-- LinkedIn -->
         <a class="social-link" href="https://www.linkedin.com/in/ian-carl-sarmiento-1b087b373/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-
-        <!-- GitHub -->
         <a class="social-link" href="https://github.com/sarmientoiancarl" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
         </a>
-
-        <!-- Gmail -->
         <a class="social-link" href="mailto:sarmiento.iancarl20@gmail.com" aria-label="Email">
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
-
-        <!-- Phone -->
         <a class="social-link" href="tel:+639687842557" aria-label="Phone">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.84 2.18 2 2 0 012.83 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l.91-.91a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         </a>
-
       </div>
     </div>
   </footer>

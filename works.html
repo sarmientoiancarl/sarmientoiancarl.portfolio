@@ -21,6 +21,8 @@
         <li><a href="index.html#skills">Skills</a></li>
         <li><a href="index.html#tools">Tools</a></li>
         <li><a href="works.html" class="active">Works</a></li>
+        <li><a href="index.html#workshops">Workshops</a></li>
+        <li><a href="info.html">Info</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
       <div class="nav-right">
@@ -69,11 +71,10 @@
   <section class="works-section">
     <div class="container">
       <div class="works-grid">
- 
+
         <!-- Card 1 — Featured -->
-        <div class="grid-card featured fade-up" data-category="smm" style="transition-delay:0.05s">
+        <div class="grid-card featured fade-up" data-category="smm" data-modal="modal-1" style="transition-delay:0.05s">
           <div class="grid-thumb tall">
-            <!-- Replace with: <img src="your-image.jpg" alt="Brand Awareness Campaign" /> -->
             <div class="grid-thumb-placeholder">
               <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
               <span>Campaign thumbnail</span>
@@ -90,13 +91,13 @@
             </div>
             <div class="grid-footer">
               <span class="grid-tools">Canva · Zoho Social · Meta</span>
-              <a class="grid-link" href="#">View details →</a>
+              <button class="grid-link open-modal" data-modal="modal-1">View details →</button>
             </div>
           </div>
         </div>
- 
+
         <!-- Card 2 -->
-        <div class="grid-card fade-up" data-category="content" style="transition-delay:0.10s">
+        <div class="grid-card fade-up" data-category="content" data-modal="modal-2" style="transition-delay:0.10s">
           <div class="grid-thumb tall">
             <div class="grid-thumb-placeholder">
               <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
@@ -113,13 +114,13 @@
             </div>
             <div class="grid-footer">
               <span class="grid-tools">Canva · Figma</span>
-              <a class="grid-link" href="#">View details →</a>
+              <button class="grid-link open-modal" data-modal="modal-2">View details →</button>
             </div>
           </div>
         </div>
- 
+
         <!-- Card 3 -->
-        <div class="grid-card fade-up" data-category="community" style="transition-delay:0.10s">
+        <div class="grid-card fade-up" data-category="community" data-modal="modal-3" style="transition-delay:0.10s">
           <div class="grid-thumb short">
             <div class="grid-thumb-placeholder">
               <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
@@ -136,13 +137,13 @@
             </div>
             <div class="grid-footer">
               <span class="grid-tools">Meta · Blaze</span>
-              <a class="grid-link" href="#">View details →</a>
+              <button class="grid-link open-modal" data-modal="modal-3">View details →</button>
             </div>
           </div>
         </div>
- 
+
         <!-- Card 4 -->
-        <div class="grid-card fade-up" data-category="email" style="transition-delay:0.15s">
+        <div class="grid-card fade-up" data-category="email" data-modal="modal-4" style="transition-delay:0.15s">
           <div class="grid-thumb short">
             <div class="grid-thumb-placeholder">
               <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -159,13 +160,13 @@
             </div>
             <div class="grid-footer">
               <span class="grid-tools">Zoho Campaigns</span>
-              <a class="grid-link" href="#">View details →</a>
+              <button class="grid-link open-modal" data-modal="modal-4">View details →</button>
             </div>
           </div>
         </div>
- 
+
         <!-- Card 5 -->
-        <div class="grid-card fade-up" data-category="content" style="transition-delay:0.15s">
+        <div class="grid-card fade-up" data-category="content" data-modal="modal-5" style="transition-delay:0.15s">
           <div class="grid-thumb short">
             <div class="grid-thumb-placeholder">
               <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
@@ -182,13 +183,13 @@
             </div>
             <div class="grid-footer">
               <span class="grid-tools">CapCut</span>
-              <a class="grid-link" href="#">View details →</a>
+              <button class="grid-link open-modal" data-modal="modal-5">View details →</button>
             </div>
           </div>
         </div>
- 
+
         <!-- Card 6 -->
-        <div class="grid-card fade-up" data-category="admin" style="transition-delay:0.20s">
+        <div class="grid-card fade-up" data-category="admin" data-modal="modal-6" style="transition-delay:0.20s">
           <div class="grid-thumb short">
             <div class="grid-thumb-placeholder">
               <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -205,13 +206,13 @@
             </div>
             <div class="grid-footer">
               <span class="grid-tools">Google Workspace · Asana</span>
-              <a class="grid-link" href="#">View details →</a>
+              <button class="grid-link open-modal" data-modal="modal-6">View details →</button>
             </div>
           </div>
         </div>
- 
+
         <!-- Card 7 -->
-        <div class="grid-card featured fade-up" data-category="smm" style="transition-delay:0.20s">
+        <div class="grid-card featured fade-up" data-category="smm" data-modal="modal-7" style="transition-delay:0.20s">
           <div class="grid-thumb short">
             <div class="grid-thumb-placeholder">
               <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
@@ -221,7 +222,7 @@
           <div class="grid-body">
             <div class="grid-type">Social Media Campaign</div>
             <div class="grid-title">Multi-Platform Content Calendar</div>
-            <div class="grid-desc">Developed and maintained a structured content calendar spanning Facebook, Instagram, and LinkedIn — ensuring consistent publishing cadence, topic variety, and brand voice alignment across all channels for a client in the services industry.</div>
+            <div class="grid-desc">Developed and maintained a structured content calendar spanning Facebook, Instagram, and LinkedIn — ensuring consistent publishing cadence, topic variety, and brand voice alignment across all channels.</div>
             <div class="grid-tags">
               <span class="grid-tag">Content Calendar</span>
               <span class="grid-tag">Multi-platform</span>
@@ -229,19 +230,163 @@
             </div>
             <div class="grid-footer">
               <span class="grid-tools">Zoho Social · Canva · Google Sheets</span>
-              <a class="grid-link" href="#">View details →</a>
+              <button class="grid-link open-modal" data-modal="modal-7">View details →</button>
             </div>
           </div>
         </div>
- 
-        <!-- Empty state (hidden by default) -->
+
+        <!-- Empty state -->
         <div class="empty-state" id="emptyState" style="display:none;">
           No works found for this category.
         </div>
- 
+
       </div>
     </div>
   </section>
+
+  <!-- ========== MODALS ========== -->
+
+  <!-- Modal template: replace placeholder divs with <img src="..."> when ready -->
+
+  <div class="modal-overlay" id="modal-1">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-type">Social Media Campaign</div>
+          <div class="modal-title">Brand Awareness Campaign</div>
+        </div>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-images">
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 1</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 2</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 3</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 4</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 5</span></div></div>
+      </div>
+      <p class="modal-desc">Multi-platform content campaign driving audience engagement through consistent visual storytelling, daily publishing, and active community management across Facebook and Instagram.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-2">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-type">Content Design</div>
+          <div class="modal-title">Social Media Graphics Series</div>
+        </div>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-images">
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 1</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 2</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 3</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 4</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 5</span></div></div>
+      </div>
+      <p class="modal-desc">Brand-aligned graphic templates that cut production time while keeping visuals consistent across all channels.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-3">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-type">Community Management</div>
+          <div class="modal-title">Engagement Growth Strategy</div>
+        </div>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-images">
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 1</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 2</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 3</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 4</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 5</span></div></div>
+      </div>
+      <p class="modal-desc">Structured comment and message management that improved audience response rates and brand presence.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-4">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-type">Email Marketing</div>
+          <div class="modal-title">Email Campaign Execution</div>
+        </div>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-images">
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 1</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 2</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 3</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 4</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 5</span></div></div>
+      </div>
+      <p class="modal-desc">End-to-end email campaign management — from content scheduling to performance tracking and reporting.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-5">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-type">Content Design</div>
+          <div class="modal-title">Short-Form Video Content</div>
+        </div>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-images">
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 1</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 2</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 3</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 4</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 5</span></div></div>
+      </div>
+      <p class="modal-desc">Edited and optimized short-form videos for Reels and TikTok to boost reach and engagement metrics.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-6">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-type">Admin & Operations</div>
+          <div class="modal-title">Calendar & Workflow Management</div>
+        </div>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-images">
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 1</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 2</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 3</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 4</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 5</span></div></div>
+      </div>
+      <p class="modal-desc">Organized client calendars, digital assets, and administrative workflows using Google Workspace for seamless day-to-day operations.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-7">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-type">Social Media Campaign</div>
+          <div class="modal-title">Multi-Platform Content Calendar</div>
+        </div>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-images">
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 1</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 2</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 3</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 4</span></div></div>
+        <div class="modal-img-wrap"><div class="modal-img-placeholder"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image 5</span></div></div>
+      </div>
+      <p class="modal-desc">Structured content calendar spanning Facebook, Instagram, and LinkedIn — ensuring consistent publishing cadence, topic variety, and brand voice alignment across all channels.</p>
+    </div>
+  </div>
  
   <!-- ========== FOOTER ========== -->
   <footer>
@@ -260,7 +405,7 @@
         <a class="social-link" href="#" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
         </a>
-        <a class="social-link" href="mailto:sarmiento.iancarl20@gmail.com" aria-label="Email">
+        <a class="social-link" href="/cdn-cgi/l/email-protection#473426352a2e22293328692e26292426352b757707202a262e2b6924282a" aria-label="Email">
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
         <a class="social-link" href="tel:+639687842557" aria-label="Phone">
@@ -269,7 +414,3 @@
       </div>
     </div>
   </footer>
- 
-  <script src="scripts.js"></script>
-</body>
-</html>
