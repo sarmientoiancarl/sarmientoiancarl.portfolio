@@ -330,7 +330,7 @@ nav {
   flex-shrink: 0;
   transition: border-color 0.2s, transform 0.2s;
 }
-.work-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.work-card:hover { border-color: var(--accent); transform: translateY(0); }
 .work-thumb {
   height: 170px; background: var(--bg-3);
   display: flex; align-items: center; justify-content: center;
