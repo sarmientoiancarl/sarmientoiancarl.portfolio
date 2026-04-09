@@ -1046,3 +1046,46 @@ footer { border-top: 0.5px solid var(--border); padding: 2.5rem 0; }
 }
 .service-page-cta:hover { opacity: 0.85; transform: translateY(-1px); }
 .service-page-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; }
+/* ===================== COPY TO CLIPBOARD ===================== */
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0.75rem;
+  padding: 6px 14px;
+  border: 0.5px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-2);
+  color: var(--text-2);
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.copy-btn:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+.copy-btn.copied {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  color: var(--accent-text);
+}
+.copy-btn svg {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+.contact-phone-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0.75rem;
+}
+.contact-phone-row .contact-phone {
+  margin-top: 0;
+}

@@ -16,6 +16,4 @@ Things to do:
 
 - For the desktop mode navigation bar, group the nav links that jumps in different sections but in the same page so the users will know if they will redirect to another page or to a different section.
 
-- Add a contact form directly on the homepage instead of just an email link. Do the same for other buttons that would contact me
-
-- Add copy to clipboard on your email and phone number in the Contact section
+- UPDATE: For the copy to clipboard, make it only an icon as big as the texts and put it beside. For the email, put it inside the button as well. If the icon is clicked, copy the email—if the button is clicked, the default action. Do the same for the number. Icon beside text, click the icon to copy.

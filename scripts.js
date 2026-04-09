@@ -205,3 +205,28 @@
     });
   }
 })();
+/* ===================== COPY TO CLIPBOARD ===================== */
+(function () {
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const text = btn.dataset.copy;
+      navigator.clipboard.writeText(text).then(() => {
+        const copyIcon  = btn.querySelector('.copy-icon');
+        const checkIcon = btn.querySelector('.check-icon');
+        const label     = btn.querySelector('.copy-label');
+
+        copyIcon.style.display  = 'none';
+        checkIcon.style.display = 'block';
+        label.textContent       = 'Copied!';
+        btn.classList.add('copied');
+
+        setTimeout(() => {
+          copyIcon.style.display  = 'block';
+          checkIcon.style.display = 'none';
+          label.textContent       = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  });
+})();
