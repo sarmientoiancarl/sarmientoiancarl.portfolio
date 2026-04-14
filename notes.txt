@@ -3,15 +3,19 @@ Website URL: https://sarmientoiancarl.github.io/portfolio/
 
 Things to do:
 
-- Create a new card in works.html. Standard Operating System (SOP) Creation.
+- Create a new card in works.html.
+
+   Standard Operating System (SOP) Creation.
+
    - Include the following:
       - Workflow diagram (high-level steps)
       - 4-6 step process summary
       - Key tools used
       - Expected outputs
       - Add a CTA: Request SOP
-   - I will provide 3 SOPs. It should be navigable with a left/right arrow just like the others, but a single page will include the ones instead of images/videos.
-   - Create placeholders for now. I will edit them once I have SOPs to add.
-   - Also add this in the index.html My Works section with the same format as the others.
 
-- For the desktop mode navigation bar, group the nav links that jumps in different sections but in the same page so the users will know if they will redirect to another page or to a different section.
+   - I will provide 3 SOPs. It should be navigable with a left/right arrow just like the others, but a single page will include the ones instead of images/videos.
+
+   - Create placeholders for now. I will edit them once I have SOPs to add.
+   
+   - Also add this in the index.html My Works section with the same format as the others.
